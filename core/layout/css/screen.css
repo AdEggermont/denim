@@ -91,6 +91,8 @@ body {
 	line-height: 1.5;
 	color: #000;
 	background: #3b3e52 url('../images/background.jpg');
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /*

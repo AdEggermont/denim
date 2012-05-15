@@ -16,6 +16,9 @@
 	{* Favicon and Apple touch icon *}
 	<link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
 	<link rel="apple-touch-icon" href="{$THEME_URL}/apple-touch-icon.png" />
+	
+	{* Responsive *}
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
 	{* Stylesheets *}
 	{iteration:cssFiles}
