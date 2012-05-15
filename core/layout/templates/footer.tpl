@@ -3,15 +3,15 @@
 		<p>&copy; {$now|date:'Y'} {$siteTitle}</p>
 	</div>
 	<nav id="footerNavigation">
-		<ul>
-			{iteration:footerLinks}
-				<li{option:footerLinks.selected} class="selected"{/option:footerLinks.selected}>
+		<p>
+			{option:footerLinks}
+				{iteration:footerLinks}
 					<a href="{$footerLinks.url}" title="{$footerLinks.title}"{option:footerLinks.rel} rel="{$footerLinks.rel}"{/option:footerLinks.rel}>
 						{$footerLinks.navigation_title}
-					</a>
-				</li>
-			{/iteration:footerLinks}
-			<li><a href="http://www.fork-cms.com" title="Fork CMS">Fork CMS</a></li>
-		</ul>
+					</a> - 
+				{/iteration:footerLinks}
+			{/option:footerLinks}
+			<a href="http://www.fork-cms.com" title="Fork CMS">Fork CMS</a>
+		</p>
 	</nav>
 </footer>

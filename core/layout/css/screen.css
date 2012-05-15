@@ -385,6 +385,7 @@ a:focus {
 	/*
 		Navigation
 	*/
+	
 	#headerNavigation {
 		width: 100%;
 		background: #b89663 url(../images/leather.jpg);
@@ -393,7 +394,9 @@ a:focus {
 		padding: 14px 0;
 		border-top: 2px solid #d0b89b;
 		border-bottom: 2px solid #816644;
-		box-shadow: 0 0 5px #000;
+		-webkit-box-shadow: 0 0 5px #000;
+		   -moz-box-shadow: 0 0 5px #000;
+		        box-shadow: 0 0 5px #000;
 	}
 
 		#headerNavigation li {
@@ -443,13 +446,15 @@ a:focus {
 
 .main .content {
 	border-width: 12px;
-	border-image: url(../images/content_border.jpg) 12 repeat;
 	-webkit-border-image: url(../images/content_border.jpg) 12 repeat;
 	-moz-border-image: url(../images/content_border.jpg) 12 repeat;
 	-o-border-image: url(../images/content_border.jpg) 12 repeat;
+	border-image: url(../images/content_border.jpg) 12 repeat;
 	padding: 8px 16px;
 	margin-top: 20px;
-	box-shadow: 0 2px 5px #000;
+	-webkit-box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
+	   -moz-box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
+	        box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
 }
 
 	/*
@@ -735,7 +740,9 @@ a:focus {
 .side .content {
 	border-width: 0;
 	padding: 0;
-	box-shadow: 0 2px 5px #000;
+	-webkit-box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
+	   -moz-box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
+	        box-shadow: 0 2px 0 0 rgba(0,0,0,.45);
 }
 
 .side .mod {
@@ -818,19 +825,17 @@ a:focus {
 	padding: 40px 18px;
 	margin-top: 30px;
 }
-
-	#footerNavigation li {
-		display: inline;
-		padding-right: 5px;
-	}
-
-		#footerNavigation li a {
-			border-color: #bbb;
-			color: #fff;
+		#footer a,
+		#footer a:visited {
+			color: #FFF;
+			border-color: #96989f;
+			border-color: rgba(255,255,255,0.45);
 		}
-
-		#footerNavigation li a:hover {
-			border-color: #fff;
+		
+		#footer a:hover,
+		#footer a:active,
+		#footer a:focus {
+			border-color: #FFF;
 		}
 
 .ui-autocomplete {
@@ -2061,6 +2066,9 @@ img.alignRight {
 			-webkit-border-image: url(../images/border_image_revert.jpg) 2 0 2 0 repeat stretch;
 			-moz-border-image: url(../images/border_image_revert.jpg) 2 0 2 0 repeat stretch;
 			-o-border-image: url(../images/border_image_revert.jpg) 2 0 2 0 repeat stretch;
+			-webkit-box-shadow: -1px 2px 0 0 rgba(0, 0, 0, .45);
+			   -moz-box-shadow: -1px 2px 0 0 rgba(0, 0, 0, .45);
+			        box-shadow: -1px 2px 0 0 rgba(0, 0, 0, .45);
 		}
 
 			/* Internet Explorer fallback */
