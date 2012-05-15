@@ -2,9 +2,7 @@
 	<article class="mod article" itemscope itemtype="http://schema.org/Blog">
 		<meta itemprop="interactionCount" content="UserComments:{$commentsCount}">
 		<meta itemprop="author" content="{$item.user_id|usersetting:'nickname'}">
-		<header class="hd">
-			<h3><a href="{$item.full_url}" title="{$item.title}">{$item.title}</a></h3>
-		</header>
+		<h1><a href="{$item.full_url}" title="{$item.title}">{$item.title}</a></h1>
 		<div class="bd content" itemprop="articleBody">
 			<ul class="info">
 				<li>{$msgWrittenBy|ucfirst|sprintf:{$item.user_id|usersetting:'nickname'}} {$lblOn} {$item.publish_on|date:{$dateFormatLong}:{$LANGUAGE}} {$lblIn} {$lblThe} {$lblCategory} <a href="{$item.category_full_url}" title="{$item.category_title}">{$item.category_title}</a></li>

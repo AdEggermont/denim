@@ -12,7 +12,7 @@
 			<div class="bd underlined">
 				<ul>
 					{iteration:widgetBlogArchive}
-						<li>
+						<li{option:widgetBlogArchive.last}{option:!widgetBlogArchive.months} class="lastChild"{/option:!widgetBlogArchive.months}{/option:widgetBlogArchive.last}>
 							{option:widgetBlogArchive.url}<a href="{$widgetBlogArchive.url}">{/option:widgetBlogArchive.url}
 								{$widgetBlogArchive.label}
 								{option:widgetBlogArchive.url}({$widgetBlogArchive.total}){/option:widgetBlogArchive.url}

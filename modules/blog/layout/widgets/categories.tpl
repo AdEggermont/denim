@@ -11,7 +11,7 @@
 		<div class="bd underlined">
 			<ul>
 				{iteration:widgetBlogCategories}
-					<li>
+					<li{option:widgetBlogCategories.last} class="lastChild"{/option:widgetBlogCategories.last}>
 						<a href="{$widgetBlogCategories.url}">
 							{$widgetBlogCategories.label}&nbsp;({$widgetBlogCategories.total})
 						</a>

@@ -8,7 +8,9 @@
 			</nav>
 
 			<div id="logo">
-				<h1><a href="/">{$siteTitle}</a></h1>
+				<p>
+					<a href="/">{$siteTitle}</a>
+				</p>
 			</div>
 
 			{iteration:positionTop}
@@ -24,7 +26,11 @@
 		<div id="mainWrapper" class="clearfix">
 
 			<div class="column main">
-
+				{* Page title *}
+				{option:!hideContentTitle}
+					<h1>{$page.title}</h1>
+				{/option:!hideContentTitle}
+				
 				{* Main position *}
 				{iteration:positionMain}
 					{option:positionMain.blockIsHTML}
@@ -46,9 +52,9 @@
 					<div class="fifty{cycle:'':' last'}">
 						{option:positionSide.blockIsHTML}
 							<section class="mod">
-								<div class="bd content">
+								<aside class="bd content">
 									{$positionSide.blockContent}
-								</div>
+								</aside>
 							</section>
 						{/option:positionSide.blockIsHTML}
 						{option:!positionSide.blockIsHTML}
