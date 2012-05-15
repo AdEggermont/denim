@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>denim</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			Denim is a responsive theme for Fork CMS.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Wouter Sioen</name>
+			<url>http://www.woutersioen.be</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="top" >
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="main" />
+				<position name="side" />
+			</positions>
+			<format>
+				[/,/,top],[main,main,side]
+			</format>
+		</template>
+		<template label="Subnav" path="core/layout/templates/subnav.tpl">
+			<positions>
+				<position name="top" >
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="side" />
+				<position name="main" />
+			</positions>
+			<format>
+				[/,/,top],[side,main,main]
+			</format>
+		</template>
+		<template label="Home" path="core/layout/templates/home.tpl">
+			<positions>
+				<position name="top" >
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="eyecatch" />
+				<position name="left" />
+				<position name="main" />
+				<position name="right" />
+			</positions>
+			<format>
+				[/,/,top],[eyecatch,eyecatch,eyecatch],[left,main,right]
+			</format>
+		</template>
+	</templates>
+</theme>
