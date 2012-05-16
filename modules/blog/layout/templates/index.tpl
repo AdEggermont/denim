@@ -25,7 +25,7 @@
 					{option:items.introduction}{$items.introduction}{/option:items.introduction}
 				</div>
 				<footer>
-					<ul>
+					<ul class="clearfix">
 						<li class="readMoreLink">
 							<a href="{$items.full_url}">{$lblReadMore|ucfirst}</a>
 						</li>

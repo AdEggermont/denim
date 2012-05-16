@@ -646,6 +646,47 @@ a:focus {
 				position: relative;
 				top: 5px;
 			}
+			
+/*
+	Blog
+*/
+
+#blogIndex h2 {
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	padding: 0;
+}
+
+	#blogIndex h2 a,
+	#blogIndex h2 a:visited {
+		border: 0;
+	}
+	
+	#blogIndex h2 a:hover,
+	#blogIndex h2 a:active,
+	#blogIndex h2 a:focus {
+		color: #000;
+	}
+
+.main article.content footer ul {
+	list-style: none;
+}
+
+	.main article.content footer li {
+		float: left;
+		list-style-type: none;
+	}
+	
+		.main article.content footer a,
+		.main article.content footer a:visited {
+			
+		}
+		
+		.main article.content footer a:hover,
+		.main article.content footer a:active,
+		.main article.content footer a:focus {
+			
+		}
 
 /*
 	Reaction form
